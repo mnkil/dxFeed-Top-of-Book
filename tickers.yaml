@@ -1,0 +1,37 @@
+tickers:
+  - /GCZ24:XCEC
+  - ./OGF25P2650:XCEC
+  - SPY
+  - MSTR
+  - MSTU
+  - COIN
+  - CONL
+  - SMCI
+  - SMCX
+  - QQQ
+  - TQQQ
+  - LABU
+  - LABD
+  - IBIT
+  - BITX
+  - TSLA
+  - TSLT
+ticker_threshold:
+  - 0.01
+  - 0.05
+  - 0.01
+  - 0.005
+  - 0.01
+  - 0.005
+  - 0.005
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+
