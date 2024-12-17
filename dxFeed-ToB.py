@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from px_snapshot_tt import px_flow
 from datetime import datetime
 import sqlite3
@@ -94,7 +92,14 @@ class ToBSnapshot:
         self.discord.post_log("ToB snapshot completed.")
         return prices
 
-    def save_to_sqlite(self, data, db_name="ToB_data.sqlite", table_name="ToB_data"):
+    def save_to_sqlite(self, data, table_name="ToB_data"):
+        """Set file paths based on the operating system."""
+        if platform.system() == "Darwin":
+            db_name = "ToB_data.sqlite"
+        else:
+            db_name = "/home/ec2-user/tt/ToB_data.sqlite"
+        
+
         """Save data to a SQLite database."""
         conn = sqlite3.connect(db_name)
         try:
