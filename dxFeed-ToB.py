@@ -39,7 +39,7 @@ class ToBSnapshot:
         """Set file paths based on the operating system."""
         if platform.system() == "Darwin":
             return "tickers.yaml", "creds.yaml"
-        return "/home/ec2-user/tt/tickers.yaml", "/home/ec2-user/tt/creds.yaml"
+        return "/home/ec2-user/dxFeed-Top-of-Book/tickers.yaml", "/home/ec2-user/dxFeed-Top-of-Book/creds.yaml"
 
     def _load_discord_credentials(self):
         """Load Discord webhook credentials from a YAML file."""
@@ -97,7 +97,7 @@ class ToBSnapshot:
         if platform.system() == "Darwin":
             db_name = "ToB_data.sqlite"
         else:
-            db_name = "/home/ec2-user/tt/ToB_data.sqlite"
+            db_name = "/home/ec2-user/dxFeed-Top-of-Book/ToB_data.sqlite"
         
 
         """Save data to a SQLite database."""
